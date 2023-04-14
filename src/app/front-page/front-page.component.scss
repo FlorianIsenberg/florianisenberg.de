@@ -19,61 +19,93 @@
   img {
     height: 290px;
   }
-}
 
-.showMe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+  .showMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-.iAm {
-  // position: relative;
-  z-index: 4;
-  .myName {
-    p {
-      font-size: 45px;
-      color: #1ce6b6;
-      // color: #4b47ff;
-      // color: white;
+  .iAm {
+    // position: relative;
+    z-index: 4;
+    .myName {
+      p {
+        font-size: 45px;
+        color: #1ce6b6;
+        // color: #4b47ff;
+        // color: white;
+      }
+    }
+
+    .job {
+      p {
+        font-size: 26px;
+        // color: #4b47ff;
+        // color: #1ce6b6;
+        color: white;
+      }
     }
   }
 
-  .job {
-    p {
-      font-size: 26px;
-      color: #4b47ff;
-      // color: #1ce6b6;
-      // color: white;
+  .letsTalk {
+    // position: relative;
+    z-index: 4;
+    width: 133px;
+    height: 50px;
+    background: #00bee8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+
+    &:hover {
+      background: #4b47ff;
     }
   }
-}
-
-.letsTalk {
-  // position: relative;
-  z-index: 4;
-  width: 133px;
-  height: 50px;
-  background: #00bee8;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  border: none;
-  color: white;
-
-  &:hover {
-    background: #4b47ff;
+  .greenShadowRight {
+    right: -137px;
+    top: 286px;
+    // overflow: hidden;
+    z-index: 3;
+    position: absolute;
+    img {
+      height: 274px;
+      width: auto;
+    }
   }
-}
-.greenShadowRight {
-  right: -137px;
-  top: 286px;
-  // overflow: hidden;
-  z-index: 3;
-  position: absolute;
-  img {
-    height: 274px;
+
+  .social {
+    display: flex;
+    gap: 42px;
+    position: absolute;
+    top: 690px;
+    left: 0px;
+    z-index: 4;
+    justify-content: flex-start;
+  }
+
+  .blueBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
     width: auto;
+
+    img {
+      width: 64px;
+      height: 5px;
+    }
+  }
+
+  .socialBar {
+    display: flex;
+    gap: 42px;
+    img {
+      height: 30px;
+    }
   }
 }
