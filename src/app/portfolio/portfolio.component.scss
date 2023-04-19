@@ -4,7 +4,8 @@
   overflow: hidden;
   box-sizing: border-box;
   color: white;
-  z-index: 2;
+  padding: 0 20px 0 20px;
+  position: relative;
 
   .headlinePortfolio {
     display: flex;
@@ -12,7 +13,7 @@
     align-items: center;
     gap: 5px;
     font-size: 45px;
-    z-index: 2;
+
     img {
       height: 4px;
       width: 20px;
@@ -20,17 +21,12 @@
   }
 
   .portfolioContent {
-    padding: 0 20px 0 20px;
-    .portfolioText {
-      z-index: 2;
-    }
+    box-sizing: border-box;
 
     .portfolioShadow {
       z-index: -1;
       position: absolute;
       right: -440px;
-
-      //   padding: 0 20px 0 20px;
 
       img {
         overflow: hidden;
@@ -43,6 +39,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      img {
+        width: 100%;
+      }
     }
   }
 }

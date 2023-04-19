@@ -13,8 +13,20 @@
       <img src="../../assets/icons/Purple shadow-3.png" alt="greenShadow" />
     </div>
     <div class="portfolioIcons">
-      <div *ngFor="let portfolio of portfolioImg; let p = index">
-        <img src="../../assets/img/portfolioImg/{{ portfolio }}" alt="" />
+      <div *ngFor="let project of projects; let i = index">
+        <img src="../../assets/img/portfolioImg/{{ project.img }}" alt="" />
+        <div class="projectContent">
+          <div>{{ project.name }}</div>
+          <div>{{ project.tech }}</div>
+          <div>
+            <button class="btnTest" (click)="openNewWindow(project.link)">
+              Live test
+            </button>
+            <button class="btnGit" (click)="openNewWindow(project.git)">
+              GitHub
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
