@@ -1,0 +1,21 @@
+<div class="portfolioSection">
+  <div class="headlinePortfolio">
+    <img src="../../assets/icons/blueBar.png" alt="purpleBar" />
+    <h2>Portfolio</h2>
+  </div>
+  <div class="portfolioContent">
+    <div class="portfolioText">
+      <p>
+        This page is a sample of my work - please feel free to try them out.
+      </p>
+    </div>
+    <div class="portfolioShadow">
+      <img src="../../assets/icons/Purple shadow-3.png" alt="greenShadow" />
+    </div>
+    <div class="portfolioIcons">
+      <div *ngFor="let portfolio of portfolioImg; let p = index">
+        <img src="../../assets/img/portfolioImg/{{ portfolio }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

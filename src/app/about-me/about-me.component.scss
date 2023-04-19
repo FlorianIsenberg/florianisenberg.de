@@ -1,0 +1,93 @@
+.aboutMeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+
+  .aboutMeShadow {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    img {
+      height: 274px;
+      width: 385px;
+    }
+  }
+
+  .aboutMeImg {
+    z-index: 1;
+    img {
+      height: 375px;
+    }
+  }
+
+  .aboutMeShadowBg {
+    position: absolute;
+    z-index: 1;
+    top: 320px;
+  }
+
+  .aboutMeHeadline {
+    z-index: 3;
+
+    h2 {
+      margin: 15px 0px 15px 0px;
+      color: white;
+      font-size: 45px;
+      font-weight: 700px;
+    }
+    p {
+      text-align: left;
+    }
+  }
+  .aboutMeKnow {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0px 0px 0px;
+
+    .lightbulb {
+      justify-content: center;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      img {
+        height: 50px;
+      }
+    }
+    .knowToMe {
+      justify-content: center;
+      display: flex;
+      p {
+        text-align: -webkit-auto;
+      }
+    }
+
+    .puzzel {
+      justify-content: center;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      img {
+        height: 50px;
+      }
+    }
+
+    .mySkills {
+      justify-content: center;
+      display: flex;
+      p {
+        text-align: -webkit-auto;
+      }
+    }
+  }
+}

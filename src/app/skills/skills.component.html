@@ -1,0 +1,18 @@
+<div class="skillSection">
+  <div class="headlineSkill">
+    <h2>Skills</h2>
+    <img src="../../assets/icons/greenBar.png" alt="greenBar" />
+  </div>
+  <div class="skillText">
+    <p>
+      I have gained experience in building projects with various front end
+      technologies and concepts.
+    </p>
+  </div>
+  <div class="skillIcon">
+    <div *ngFor="let skill of skillsImg; let i = index">
+      <img src="../../assets/icons/skills/{{ skillsImg[i] }}" alt="" />
+    </div>
+  </div>
+  <button class="skillBtn">Get in touch</button>
+</div>
