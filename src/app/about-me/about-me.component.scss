@@ -23,6 +23,7 @@
     z-index: 1;
     img {
       height: 375px;
+      // width: 100%;
     }
   }
 
@@ -30,6 +31,9 @@
     position: absolute;
     z-index: 1;
     top: 320px;
+    img {
+      width: 100%;
+    }
   }
 
   .aboutMeHeadline {

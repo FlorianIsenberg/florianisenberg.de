@@ -42,6 +42,39 @@
       img {
         width: 100%;
       }
+
+      .projectContent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        .projectName {
+        }
+        .projectTech {
+        }
+        .btnSection {
+          display: flex;
+          gap: 30px;
+        }
+        .btnTest {
+          width: 152px;
+          height: 58px;
+          background: #4b47ff;
+          border-radius: 10px;
+          border: none;
+          color: white;
+        }
+        .btnGit {
+          width: 137px;
+          height: 58px;
+          border: 1px solid #00bee8;
+          border-radius: 10px;
+          color: white;
+          background: transparent;
+        }
+      }
     }
   }
 }

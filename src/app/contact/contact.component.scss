@@ -1,0 +1,133 @@
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  padding: 0 20px;
+
+  .headlineSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    h2 {
+      margin: 0;
+    }
+    .blueBar {
+      width: 100%;
+      height: 4px;
+      width: 82px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .secHeadSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      height: 4px;
+      width: 20px;
+    }
+
+    h3 {
+      padding: 0 0 0 5px;
+    }
+  }
+
+  .textSection {
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contactArea {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+
+      padding-bottom: 75px;
+      &.ng-submitted {
+        input,
+        textarea {
+          &.ng-invalid {
+            border: solid 1px red;
+          }
+        }
+      }
+      input,
+      textarea {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 25px;
+
+        font-family: var(--font);
+        font-size: 16px;
+        color: var(--white);
+
+        background-color: var(--darkblue);
+        outline: none;
+        border: solid 1px var(--blue);
+        border-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        &::placeholder {
+          color: var(--white);
+        }
+        &.ng-valid {
+          border: solid 1px var(--lightblue);
+        }
+        &:-webkit-autofill,
+        :-webkit-autofill:hover,
+        :-webkit-autofill:focus,
+        :-webkit-autofill:active {
+          transition: background-color 5000s ease-in-out 0s;
+          -webkit-text-fill-color: #fff !important;
+        }
+      }
+      .relative {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        input {
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        .inputError {
+          position: absolute;
+          right: 25px;
+          bottom: 15px;
+        }
+        .textError {
+          position: absolute;
+          right: 25px;
+          top: 15px;
+        }
+        .error {
+          position: absolute;
+          bottom: -20px;
+          color: red;
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
