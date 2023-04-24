@@ -1,0 +1,100 @@
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-top: solid 4px var(--lightblue);
+  background-color: var(--darkblue);
+  z-index: 15;
+
+  gap: 35px;
+
+  padding: 45px 0px 45px;
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    .logo {
+      width: 216px;
+    }
+    span {
+      font-size: 18px;
+      color: var(--white);
+    }
+    .social {
+      display: flex;
+      gap: 50px;
+      a {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        object-fit: contain;
+        transform: scale(0.8);
+        transition: 225ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1);
+          transition: 225ms ease-in-out;
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .legalNoticeLinks {
+    color: var(--white);
+  }
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--lightblue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+// @media (min-width: 1000px) {
+//   .footerSection {
+//     align-items: flex-start;
+//     gap: 1px;
+//     padding: 45px 73px 45px;
+//     .footerContent {
+//       box-sizing: border-box;
+//       padding: 0 20px 0 20px;
+//       flex-direction: row !important;
+//       justify-content: space-between !important;
+
+//       width: 100%;
+//     }
+//     .social {
+//       img {
+//         &:hover {
+//           transform: scale(1.2);
+//           transition: 225ms ease-in-out;
+//         }
+//       }
+//     }
+//     .legalNoticeLinks {
+//       margin-left: 35px;
+//     }
+//   }
+// }

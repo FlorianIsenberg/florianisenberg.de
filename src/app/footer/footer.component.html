@@ -1,21 +1,18 @@
 <div class="footerSection">
   <div class="footerContent">
-    <a href="#home"
-      ><img class="logo" src="assets/img/logo/logo_long.png" alt=""
-    /></a>
+    <a href="#home"><img class="logo" src="" alt="logo Florian" /></a>
     <span>© 2023 Florian Isenberg</span>
-    <div class="social" *ngFor="let link of links; let i = index">
+    <div class="social">
       <img
         src="../../assets/icons/github m.png"
         alt=""
-        (click)="openNewWindow(link.github)"
+        (click)="openNewWindow('https://github.com/FlorianIsenberg')"
       />
-      <a [href]="emailstring"><img src="../../assets/icons/mail m.png" /></a>
+      <a [href]="emailstring"><img src="../../assets/icons/mail m.png"></a>
       <img
         src="../../assets/icons/linkedin m.png"
         alt=""
-        (click)="openNewWindow(link.linkedin)"
-      />
+        (click)="openNewWindow('https://www.linkedin.com/in/florian-isenberg/')">
     </div>
   </div>
   <div class="legalNoticeLinks">
