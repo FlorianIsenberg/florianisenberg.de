@@ -36,7 +36,8 @@
     .myName {
       p {
         font-size: 45px;
-        color: #1ce6b6;
+        color: var(--green);
+        font-family: var(--font);
         // color: #4b47ff;
         // color: white;
       }
@@ -47,7 +48,8 @@
         font-size: 26px;
         // color: #4b47ff;
         // color: #1ce6b6;
-        color: white;
+        color: var(--white);
+        font-family: var(--font);
       }
     }
   }
@@ -57,15 +59,18 @@
     z-index: 4;
     width: 133px;
     height: 50px;
-    background: #00bee8;
+    background: var(--lightblue);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
     color: white;
     padding: 15px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font);
 
     &:hover {
-      background: #4b47ff;
+      background: var(--blue);
     }
   }
   .greenShadowRight {

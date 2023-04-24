@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+
+  font-family: "Poppins-Bold";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
 body {
   margin: 0;
   background-color: #141d2f;
@@ -7,6 +15,12 @@ body {
 
 p {
   margin: 0px;
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: var(--font);
+  font-size: 16px;
 }
 
 :root {

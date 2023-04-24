@@ -3,7 +3,7 @@
   flex-direction: column;
   position: relative;
   box-sizing: border-box;
-  color: white;
+  color: var(--white);
   width: 100%;
   padding: 0 20px;
 
@@ -13,7 +13,8 @@
     align-items: center;
     width: 100%;
     h2 {
-      margin: 0;
+      margin: 50px 0 50px 0;
+      font-size: 45px;
     }
     .blueBar {
       width: 100%;
@@ -35,6 +36,7 @@
 
     h3 {
       padding: 0 0 0 5px;
+      font-size: 23px;
     }
   }
 
@@ -126,6 +128,23 @@
           color: red;
           font-size: 12px;
           margin: 0;
+        }
+      }
+      button {
+        background: var(--lightblue);
+        width: 186px;
+        height: 49px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        color: var(--white);
+        &:hover {
+          transform: scale(1.1);
+          transition: 225ms ease-in-out;
+          &:active {
+            filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg)
+              brightness(98%) contrast(101%);
+          }
         }
       }
     }

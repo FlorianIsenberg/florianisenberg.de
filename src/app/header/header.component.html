@@ -1,8 +1,25 @@
 <header>
   <img src="../../assets/icons/logo.png" alt="Florian Logo" class="logo" />
-  <img
-    src="../../assets/icons/burger menu.png"
-    alt="burger menu"
-    class="menu"
-  />
+
+  <label class="burger" for="burger">
+    <input type="checkbox" id="burger" (click)="toggleMenu()" />
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="links" [class.isOpen]="isMenuOpen">
+    <a class="hover-underline-animation" href="#aboutMe" (click)="closeMenu()"
+      >About me</a
+    >
+    <a class="hover-underline-animation" href="#skills" (click)="closeMenu()"
+      >Skills</a
+    >
+    <a class="hover-underline-animation" href="#portfolio" (click)="closeMenu()"
+      >Portfolio</a
+    >
+    <a class="hover-underline-animation" href="#contact" (click)="closeMenu()"
+      >Contact</a
+    >
+  </div>
 </header>

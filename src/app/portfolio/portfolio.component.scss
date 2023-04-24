@@ -3,7 +3,7 @@
   flex-direction: column;
   overflow: hidden;
   box-sizing: border-box;
-  color: white;
+  color: var(--white);
   padding: 0 20px 0 20px;
   position: relative;
 
@@ -12,8 +12,9 @@
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    font-size: 45px;
-
+    h2 {
+      font-size: 45px;
+    }
     img {
       height: 4px;
       width: 20px;
@@ -50,10 +51,10 @@
         align-items: center;
         text-align: center;
         gap: 10px;
-        .projectName {
-        }
-        .projectTech {
-        }
+        // .projectName {
+        // }
+        // .projectTech {
+        // }
         .btnSection {
           display: flex;
           gap: 30px;
@@ -61,17 +62,17 @@
         .btnTest {
           width: 152px;
           height: 58px;
-          background: #4b47ff;
+          background: var(--blue);
           border-radius: 10px;
           border: none;
-          color: white;
+          color: var(--white);
         }
         .btnGit {
           width: 137px;
           height: 58px;
-          border: 1px solid #00bee8;
+          border: 1px solid var(--lightblue);
           border-radius: 10px;
-          color: white;
+          color: var(--white);
           background: transparent;
         }
       }
