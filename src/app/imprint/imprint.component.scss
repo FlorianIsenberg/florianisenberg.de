@@ -1,0 +1,31 @@
+$mobile-breakpoint: 520px;
+$mobile-breakpoint-2: 800px;
+$mobile-breakpoint-3: 1100px;
+$mobile-breakpoint-4: 1400px;
+.imprintSection {
+    min-height: calc(100vh - 314px);
+    padding: var(--padding-page);
+    padding: 70px 20px 0px 20px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:var(--white);
+    .subheadline {
+        font-size: var(--subheadline-size2);
+    }
+    a {
+        color: var(--white);
+        text-decoration: none;
+    }
+    .padding{
+        padding: 10px 0 10px 0;
+    }
+}
+
+@media (min-width: $mobile-breakpoint) {
+    .imprintSec {
+        display: block !important;
+    }
+}

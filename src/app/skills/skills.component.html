@@ -1,18 +1,54 @@
-<div class="skillSection" id="skills">
-  <div class="headlineSkill">
-    <h2>Skills</h2>
-    <img src="../../assets/icons/greenBar.png" alt="greenBar" />
+<div class="skillSec" id="skills">
+  <div class="skillContent">
+    <div class="skills">
+      <h2>Skills</h2>
+      <img src="../../assets/icons/greenBar.png" alt="greenBar" />
+    </div>
+
+    <p>
+      I have gained experience in building projects with various front end
+      technologies and concepts.
+    </p>
+
+    <div class="skillListMobile">
+      <div *ngFor="let skill of skillsImg; let i = index">
+        <img src="../../assets/icons/skills/{{ skillsImg[i] }}" alt="" />
+      </div>
+    </div>
+    <a class="skillBtn" [href]="emailstring">
+      <button class="btn">Get in touch</button>
+    </a>
   </div>
-  <div class="skillText">
+  <div
+    class="skillListDesktop"
+    data-aos="zoom-in"
+    data-aos-anchor-placement="center-bottom"
+    data-aos-duration="1000"
+  >
+    <div *ngFor="let skill of skillsImg; let i = index">
+      <img src="../../assets/icons/skills/{{ skillsImg[i] }}" alt="" />
+    </div>
+  </div>
+</div>
+
+<!-- <div class="skillSection" id="skills">
+  <div class="skillContent">
+
+    <div class="headlineSkill">
+      <h2>Skills</h2>
+     
+    </div>
+
+    <div class="skillText">
     <p>
       I have gained experience in building projects with various front end
       technologies and concepts.
     </p>
   </div>
-  <div class="skillIcon">
-    <div *ngFor="let skill of skillsImg; let i = index">
-      <img src="../../assets/icons/skills/{{ skillsImg[i] }}" alt="" />
-    </div>
+
+  <div class="skillIconM">
+    
   </div>
-  <button class="skillBtn">Get in touch</button>
-</div>
+    <button class="skillBtn">Get in touch</button>
+  </div>
+</div> -->

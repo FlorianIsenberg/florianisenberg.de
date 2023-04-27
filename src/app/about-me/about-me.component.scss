@@ -4,23 +4,27 @@
   align-items: center;
   flex-direction: column;
   color: white;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   box-sizing: border-box;
   padding: 0 20px 0 20px;
 
   .aboutMeShadow {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     top: 50px;
+    width: 100%;
+
     img {
       height: 274px;
-      width: 385px;
+
+      box-sizing: border-box;
     }
   }
 
   .aboutMeImg {
     z-index: 1;
+    box-sizing: border-box;
     img {
       height: 375px;
       // width: 100%;
@@ -94,6 +98,52 @@
       p {
         text-align: -webkit-auto;
       }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .aboutMeShadow {
+    width: auto !important;
+  }
+}
+
+@media (min-width: 999px) {
+  .aboutMeSection {
+    justify-content: space-between !important;
+    flex-direction: row-reverse !important;
+    padding: 0 180px 0 180px !important;
+    width: 100%;
+
+    .aboutMeShadowBg {
+      position: absolute;
+      top: 155px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .shadowPic {
+      position: relative;
+
+      .aboutMeShadow {
+        z-index: -1;
+        position: absolute !important;
+      }
+
+      .aboutMeImg {
+        position: unset !important;
+      }
+    }
+
+    .aboutMeHeadline {
+      justify-content: flex-start !important;
+      flex-direction: column !important;
+      width: 400px;
+      display: flex;
     }
   }
 }

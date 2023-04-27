@@ -18,4 +18,6 @@ export class SkillsComponent {
     'api.png',
     'material.png',
   ];
+
+  emailstring = "mailto:kontakt@florianisenberg.de"
 }

@@ -44,38 +44,64 @@
         width: 100%;
       }
 
-      .projectContent {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-        // .projectName {
-        // }
-        // .projectTech {
-        // }
-        .btnSection {
+      .portfolioProject {
+        display: block;
+
+        .projectContent {
           display: flex;
-          gap: 30px;
-        }
-        .btnTest {
-          width: 152px;
-          height: 58px;
-          background: var(--blue);
-          border-radius: 10px;
-          border: none;
-          color: var(--white);
-        }
-        .btnGit {
-          width: 137px;
-          height: 58px;
-          border: 1px solid var(--lightblue);
-          border-radius: 10px;
-          color: var(--white);
-          background: transparent;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+          // .projectName {
+          // }
+          // .projectTech {
+          // }
+          .btnSection {
+            display: flex;
+            gap: 30px;
+          }
+          .btnTest {
+            width: 152px;
+            height: 58px;
+            background: var(--blue);
+            border-radius: 10px;
+            border: none;
+            color: var(--white);
+          }
+          .btnGit {
+            width: 137px;
+            height: 58px;
+            border: 1px solid var(--lightblue);
+            border-radius: 10px;
+            color: var(--white);
+            background: transparent;
+          }
         }
       }
     }
+  }
+}
+
+@media (min-width: 999px) {
+  .portfolioSection {
+    padding: 0 200px !important;
+  }
+
+  .portfolioIcons {
+    display: unset !important;
+
+    img {
+      width: 600px !important;
+    }
+  }
+
+  .portfolioProject {
+    display: flex !important;
+  }
+
+  .portfolioProject:nth-child(even) {
+    flex-direction: row-reverse !important;
   }
 }

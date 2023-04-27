@@ -150,3 +150,24 @@
     }
   }
 }
+
+@media (min-width: 999px) {
+  .contactSection {
+    .headlineSection {
+      img {
+        width: 250px !important;
+      }
+    }
+
+    .contactContent {
+      display: flex !important;
+    }
+    .secHeadSection {
+      display: flex !important;
+    }
+
+    .textSection {
+      flex-direction: column !important;
+    }
+  }
+}
