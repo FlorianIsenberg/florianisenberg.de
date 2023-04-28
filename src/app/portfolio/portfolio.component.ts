@@ -11,6 +11,8 @@ export class PortfolioComponent {
       img: 'mockupEOTSF.png',
       tech: 'HTML | CSS | Javascript',
       name: 'Elves of the silver forest',
+      description:
+        'A simple Jump-and-Run game based on an object-oriented approach. Help the last remaining elf to find mana tanks to fight against the attacking orcs. ',
       link: '',
       git: '',
     },
@@ -18,6 +20,8 @@ export class PortfolioComponent {
       img: 'mockupPokedex.png',
       tech: 'HTML | CSS | Javascript | API',
       name: 'Pokedex',
+      description:
+        'Based on the PokéAPI a simple libary that provides and catalogues pokémon information',
       link: '',
       git: '',
     },
@@ -25,6 +29,8 @@ export class PortfolioComponent {
       img: 'mockupJoin.png',
       tech: 'HTML | CSS | Javascript',
       name: 'Join',
+      description:
+        'Task manager inspired by the Kanban System. Create and organize task using drag and drop functions, assign users and categories. This project was developed by group work.',
       link: '',
       git: '',
     },

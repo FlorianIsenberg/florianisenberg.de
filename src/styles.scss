@@ -22,7 +22,6 @@ p {
 }
 
 * {
- 
   font-family: var(--font);
   font-size: 16px;
 }
@@ -35,4 +34,8 @@ p {
   --white: #ffffff;
   --font: Poppins, sans-serif;
   --font-bold: Poppins-Bold, sans-serif;
+}
+
+:root {
+  --padding: 0px 100px;
 }

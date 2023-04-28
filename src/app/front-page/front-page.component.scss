@@ -117,21 +117,75 @@
   }
 }
 
-@media(min-width:999px)
-{
- 
-  .myName
-    p{
-    font-size: 128px !important;
-  }
-  .job{
-    p{
-      font-size: 64px !important;
+@media (min-width: 700px) {
+  .myName {
+    p {
+      font-size: 64px;
     }
-
+  }
+  .job {
+    p {
+      font-size: 37px;
+    }
   }
 
-  
+  .purpelShadowLeft {
+    left: -295px !important;
+    top: 124px !important;
 
+    img {
+      height: 505px !important;
+    }
+  }
+
+  .greenShadowRight {
+    right: -253px !important;
+    top: 196px !important;
+    img {
+      height: 417px !important;
+    }
+  }
 }
 
+@media (min-width: 880px) {
+  .myName {
+    p {
+      font-size: 70px !important;
+    }
+  }
+  .job {
+    p {
+      font-size: 42px !important;
+    }
+  }
+}
+
+@media (min-width: 999px) {
+  .currentContent {
+    padding: 0 !important;
+
+    .purpelShadowLeft {
+      left: -215px;
+      top: 65px;
+
+      img {
+        height: 622px;
+      }
+    }
+    .myName p {
+      font-size: 128px !important;
+    }
+    .job {
+      p {
+        font-size: 64px !important;
+      }
+    }
+    .greenShadowRight {
+      right: -205px !important;
+      top: 73px !important;
+      img {
+        height: 485px !important;
+      }
+    }
+  }
+}

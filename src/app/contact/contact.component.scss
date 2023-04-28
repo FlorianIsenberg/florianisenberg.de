@@ -153,6 +153,7 @@
 
 @media (min-width: 999px) {
   .contactSection {
+    padding: var(--padding);
     .headlineSection {
       img {
         width: 250px !important;
@@ -168,6 +169,12 @@
 
     .textSection {
       flex-direction: column !important;
+    }
+
+    .contactArea {
+      form {
+        width: 80%;
+      }
     }
   }
 }

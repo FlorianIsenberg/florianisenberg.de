@@ -1,7 +1,3 @@
-$mobile-breakpoint: 520px;
-$mobile-breakpoint-2: 800px;
-$mobile-breakpoint-3: 1100px;
-$mobile-breakpoint-4: 1400px;
 .skillSec {
   position: relative;
   display: flex;
@@ -88,15 +84,16 @@ $mobile-breakpoint-4: 1400px;
   }
 }
 
-@media (min-width: $mobile-breakpoint-3) {
+@media (min-width: 1000px) {
   .skillSec {
     flex-direction: row-reverse;
     justify-content: space-between !important;
     align-items: center;
-    min-height: 50vh;
+    min-height: 60vh;
     gap: 50px;
+    padding: var(--padding);
     .skillContent {
-      padding: var(--padding-page);
+      // padding: var(--padding);
       padding-left: unset !important;
       width: 30%;
       // min-width: 460px;
@@ -121,14 +118,23 @@ $mobile-breakpoint-4: 1400px;
   }
 }
 
-@media (min-width: $mobile-breakpoint-4) {
+@media (min-width: 1400px) {
   .skillListDesktop {
-    padding-top: 90px !important;
-    padding-bottom: 90px !important;
-    display: flex !important;
-    // padding-right: unset !important;
-    max-width: 585px !important;
-    gap: 90px !important;
+    padding-top: 50px !important;
+  }
+  //   .skillListDesktop {
+  //     padding-top: 90px !important;
+  //     padding-bottom: 90px !important;
+  //     display: flex !important;
+
+  //     max-width: 585px !important;
+  //     gap: 90px !important;
+  //   }
+}
+
+@media (min-width: 1600px) {
+  .skillListDesktop {
+    padding-top: 150px !important;
   }
 }
 
@@ -137,90 +143,3 @@ $mobile-breakpoint-4: 1400px;
     right: -90px !important;
   }
 }
-
-// .skillSection {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-direction: column;
-//   box-sizing: border-box;
-//
-//
-//   position: relative  ;
-//   z-index: 2;
-
-//   .skillContent{
-//     display: flex;
-
-//   .headlineSkill {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     padding: 0px 0px 0px 20px;
-//     min-width: 100%;
-//     box-sizing: border-box;
-//     h2 {
-//
-//     }
-//     img {
-//       width: 120px;
-//       height: 4px;
-//     }
-//   }
-//   .skillText {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: left;
-//     p {
-//       padding: 25px 20px 25px 20px;
-//     }
-//   }
-
-//   .skillIconM {
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     gap: 20px;
-//     padding: 0px 20px 0px 20px;
-//     img {
-//       height: 80px;
-//       //   width: 120px;
-//     }
-//   }
-
-// }}
-
-// // @media (min-width: 410px){
-// //   .headlineSkill{
-// //     img{
-// //       width: 215px !important;
-// //     }
-// //   }
-// // }
-
-// // @media (min-width:800px )
-// // {
-// //   .skillSection{
-// //     display: flex;
-
-// //   .headlineSkill{
-
-// //     justify-content: flex-end !important;
-// //     img{
-
-// //     }
-// //   }
-
-// //   .skillText{
-// //     justify-content: flex-end !important;
-// //     width: 100%;
-
-// //     p{width: 300px;}
-// //   }
-
-// //   .skillIconM{
-// //     justify-content: flex-start !important;
-// //   }
-// // }}

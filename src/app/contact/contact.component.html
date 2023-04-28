@@ -23,7 +23,11 @@
       </div>
     </div>
     <div class="contactArea">
-      <form [formGroup]="myForm">
+      <form
+        [formGroup]="myForm"
+        (ngSubmit)="onSubmit(formContact)"
+        #formContact="ngForm"
+      >
         <div class="relative">
           <input
             formControlName="name"

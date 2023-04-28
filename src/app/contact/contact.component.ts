@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
   post = {
-    endPoint: 'src/sendmail.php',
+    endPoint: 'https://florianisenberg.de/sendmail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -36,10 +36,10 @@ export class ContactComponent implements OnInit {
 
   onSubmit(ngForm: any) {
     this.isSubmitted = true;
-    if (this.myForm.valid) {
-      this.isSubmitted = false;
-      this.myForm.reset();
-    }
+    // if (this.myForm.valid) {
+    //   this.isSubmitted = false;
+    //   this.myForm.reset();
+    // }
     if (this.myForm.valid) {
       let data = {
         name: this.myForm.value.name,
