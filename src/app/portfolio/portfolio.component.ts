@@ -14,7 +14,7 @@ export class PortfolioComponent {
       description:
         'A simple Jump-and-Run game based on an object-oriented approach. Help the last remaining elf to find mana tanks to fight against the attacking orcs. ',
       link: '',
-      git: '',
+      git: 'https://github.com/FlorianIsenberg/Elf-of-the-silver-forest',
     },
     {
       img: 'mockupPokedex.png',
