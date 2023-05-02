@@ -17,8 +17,19 @@
         *ngFor="let project of projects; let i = index"
         class="portfolioProject"
       >
-        <img src="../../assets/img/portfolioImg/{{ project.img }}" alt="" />
-        <div class="projectContent">
+        <img
+          src="../../assets/img/portfolioImg/{{ project.img }}"
+          alt=""
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        />
+        <div
+          class="projectContent"
+          data-aos="fade-down"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000"
+        >
           <div class="projectName">{{ project.name }}</div>
           <div class="projectTech">{{ project.tech }}</div>
           <div class="projectDesc">{{ project.description }}</div>

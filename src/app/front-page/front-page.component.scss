@@ -3,12 +3,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: auto;
+
   position: relative;
   z-index: 2;
   height: 100vh;
   box-sizing: border-box;
-  padding: 0 20px 0 20px;
+  // padding: 0 20px 0 20px;
   overflow: hidden;
 
   .purpelShadowLeft {
@@ -99,8 +99,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: auto;
-    width: auto;
 
     img {
       width: 64px;

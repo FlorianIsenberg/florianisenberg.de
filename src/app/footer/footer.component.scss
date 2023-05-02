@@ -7,6 +7,8 @@
   border-top: solid 4px var(--lightblue);
   background-color: var(--darkblue);
   z-index: 15;
+  box-sizing: border-box;
+  overflow: hidden;
 
   gap: 35px;
 

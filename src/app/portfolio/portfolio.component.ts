@@ -13,7 +13,7 @@ export class PortfolioComponent {
       name: 'Elves of the silver forest',
       description:
         'A simple Jump-and-Run game based on an object-oriented approach. Help the last remaining elf to find mana tanks to fight against the attacking orcs. ',
-      link: '',
+      link: 'https://elf-of-the-silver-forest.florianisenberg.de/',
       git: 'https://github.com/FlorianIsenberg/Elf-of-the-silver-forest',
     },
     {
@@ -22,8 +22,8 @@ export class PortfolioComponent {
       name: 'Pokedex',
       description:
         'Based on the PokéAPI a simple libary that provides and catalogues pokémon information',
-      link: '',
-      git: '',
+      link: 'https://pokedex.florianisenberg.de/',
+      git: 'https://github.com/FlorianIsenberg/myPokedex',
     },
     {
       img: 'mockupJoin.png',
@@ -31,8 +31,8 @@ export class PortfolioComponent {
       name: 'Join',
       description:
         'Task manager inspired by the Kanban System. Create and organize task using drag and drop functions, assign users and categories. This project was developed by group work.',
-      link: '',
-      git: '',
+      link: 'https://join.florianisenberg.de/',
+      git: 'https://github.com/FlorianIsenberg/myJoin',
     },
   ];
 
