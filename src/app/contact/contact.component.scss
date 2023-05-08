@@ -138,9 +138,12 @@
         border-radius: 10px;
         border: none;
         color: var(--white);
+        cursor: pointer;
         &:hover {
           transform: scale(1.1);
           transition: 225ms ease-in-out;
+          background: var(--blue);
+
           &:active {
             filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg)
               brightness(98%) contrast(101%);

@@ -7,18 +7,19 @@
     <div>
       <div class="secHeadSection">
         <img src="../../assets/icons/greenBar.png" alt="greenBar" />
-        <h3>Got a problem to solve?</h3>
+        <h3>Haben Sie ein Problem zu lösen?</h3>
       </div>
 
       <div class="textSection">
         <div>
           <p>
-            Contact me through this form, I am interested in hearing you,
-            knowing your ideas and contributing to your projects with my work.
+            Kontaktieren Sie mich über dieses Formular. Ich bin daran
+            interessiert, Sie anzuhören, Ihre Ideen zu kennen und mit meiner
+            Arbeit zu Ihren Projekten beizutragen.
           </p>
         </div>
         <div>
-          <p>Need a Frontend developer? Contact me!</p>
+          <p>Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!</p>
         </div>
       </div>
     </div>
@@ -59,14 +60,14 @@
             id="emailInput"
           />
           <ng-container
-            *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched"
+            *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched"
           >
             <img class="inputError" src="assets/icons/invalid.svg" alt="" />
           </ng-container>
-          <ng-container *ngIf="myForm.get('name')?.valid">
+          <ng-container *ngIf="myForm.get('email')?.valid">
             <img class="inputError" src="assets/icons/valid.svg" alt="" />
           </ng-container>
-          <ng-container *ngIf="myForm.get('name')?.invalid && isSubmitted">
+          <ng-container *ngIf="myForm.get('email')?.invalid && isSubmitted">
             <p class="error">Your name is required!</p>
           </ng-container>
         </div>
@@ -81,14 +82,16 @@
             id="messageInput"
           ></textarea>
           <ng-container
-            *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched"
+            *ngIf="
+              myForm.get('message')?.invalid && myForm.get('message')?.touched
+            "
           >
             <img class="inputError" src="assets/icons/invalid.svg" alt="" />
           </ng-container>
-          <ng-container *ngIf="myForm.get('name')?.valid">
+          <ng-container *ngIf="myForm.get('message')?.valid">
             <img class="inputError" src="assets/icons/valid.svg" alt="" />
           </ng-container>
-          <ng-container *ngIf="myForm.get('name')?.invalid && isSubmitted">
+          <ng-container *ngIf="myForm.get('message')?.invalid && isSubmitted">
             <p class="error">Your name is required!</p>
           </ng-container>
         </div>

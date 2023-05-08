@@ -12,7 +12,7 @@ export class PortfolioComponent {
       tech: 'HTML | CSS | Javascript',
       name: 'Elves of the silver forest',
       description:
-        'A simple Jump-and-Run game based on an object-oriented approach. Help the last remaining elf to find mana tanks to fight against the attacking orcs. ',
+        'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf der letzten verbliebenen Elfe, Manatanks zu finden, um gegen die angreifenden Orks zu kämpfen.',
       link: 'https://elf-of-the-silver-forest.florianisenberg.de/',
       git: 'https://github.com/FlorianIsenberg/Elf-of-the-silver-forest',
     },
@@ -21,7 +21,7 @@ export class PortfolioComponent {
       tech: 'HTML | CSS | Javascript | API',
       name: 'Pokedex',
       description:
-        'Based on the PokéAPI a simple libary that provides and catalogues pokémon information',
+        'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert',
       link: 'https://pokedex.florianisenberg.de/',
       git: 'https://github.com/FlorianIsenberg/myPokedex',
     },
@@ -30,7 +30,7 @@ export class PortfolioComponent {
       tech: 'HTML | CSS | Javascript',
       name: 'Join',
       description:
-        'Task manager inspired by the Kanban System. Create and organize task using drag and drop functions, assign users and categories. This project was developed by group work.',
+        'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu. Dieses Projekt wurde in Gruppenarbeit entwickelt.',
       link: 'https://join.florianisenberg.de/',
       git: 'https://github.com/FlorianIsenberg/myJoin',
     },
