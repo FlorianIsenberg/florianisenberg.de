@@ -156,8 +156,11 @@
 
 @media (min-width: 999px) {
   .contactSection {
-    padding: var(--padding);
+    padding: var(--paddingSmall);
     .headlineSection {
+      h2 {
+        font-size: 70px;
+      }
       img {
         width: 250px !important;
       }
@@ -179,5 +182,10 @@
         width: 80%;
       }
     }
+  }
+}
+@media (min-width: 1200px) {
+  .contactSection {
+    padding: var(--padding) !important;
   }
 }

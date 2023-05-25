@@ -22,9 +22,10 @@
         font-family: var(--font);
       }
 
-      .line {
+      img {
         position: absolute;
         right: 0;
+        width: 175px;
       }
     }
     p {
@@ -98,7 +99,7 @@
     align-items: center;
     min-height: 60vh;
     gap: 50px;
-    padding: var(--padding);
+    padding: var(--paddingSmall) !important;
     .skillContent {
       // padding: var(--padding);
       padding-left: unset !important;
@@ -106,6 +107,9 @@
       // min-width: 460px;
       .skills {
         padding: unset;
+        h2 {
+          font-size: 70px;
+        }
       }
       p {
         padding: unset;
@@ -125,7 +129,41 @@
   }
 }
 
+@media (min-width: 400px) {
+  .skills {
+    img {
+      width: 235px !important ;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills {
+    img {
+      width: 120px !important ;
+    }
+  }
+}
+@media (min-width: 1100px) {
+  .skills {
+    img {
+      width: 165px !important ;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .skillSec {
+    padding: var(--padding) !important;
+  }
+}
+
 @media (min-width: 1400px) {
+  .skills {
+    img {
+      width: 250px !important;
+    }
+  }
   .skillListDesktop {
     padding-top: 50px !important;
   }
@@ -140,13 +178,12 @@
 }
 
 @media (min-width: 1600px) {
+  .skills {
+    img {
+      width: 300px !important;
+    }
+  }
   .skillListDesktop {
     padding-top: 150px !important;
-  }
-}
-
-@media (max-width: 420px) {
-  .line {
-    right: -90px !important;
   }
 }

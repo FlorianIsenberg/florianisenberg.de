@@ -126,7 +126,7 @@
 @media (min-width: 999px) {
   .portfolioSection {
     // padding: var(--padding) !important;
-    padding: var(--padding) !important;
+    padding: var(--paddingSmall) !important;
     justify-content: space-around !important;
 
     .headlinePortfolio {
@@ -147,7 +147,7 @@
       flex-direction: unset !important;
       width: 100%;
       padding: 80px 0 !important;
-      gap: 50px;
+      gap: 100px;
       // .projectContent {
       //   // width: 100%;
       // }
@@ -159,7 +159,11 @@
   }
 }
 
-// @media (min-width:1300px){}
+@media (min-width: 1200px) {
+  .portfolioSection {
+    padding: var(--padding) !important;
+  }
+}
 
 @media (min-width: 1400px) {
   .projectDesc {

@@ -162,7 +162,7 @@
   .aboutMeSection {
     justify-content: space-between !important;
     flex-direction: row-reverse !important;
-    padding: var(--padding);
+    padding: var(--paddingSmall);
     min-height: 685px !important;
 
     .aboutMeShadowBg {
@@ -203,6 +203,16 @@
       h2 {
         font-size: 70px;
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutMeSection {
+    padding: var(--padding) !important;
+
+    .aboutMeHeadline {
+      width: 600px !important;
     }
   }
 }
